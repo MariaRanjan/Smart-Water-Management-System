@@ -1,0 +1,11 @@
+IF Dry Run Sensor = 1
+    → Stop Pump
+    → Set ALERT flag
+    → Send fault status to ESP8266
+
+IF Overflow = 1
+    → Stop Pump immediately
+    → Trigger safety mode
+
+IF Flow Rate = 0 while pump ON
+    → Possible blockage → trigger fault
