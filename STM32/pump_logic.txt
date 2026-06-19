@@ -1,0 +1,11 @@
+IF Tank Level < 30%
+    → Turn ON Pump
+
+IF Tank Level > 80%
+    → Turn OFF Pump
+
+IF Sump Level low
+    → Prevent pump ON
+
+IF Overflow = 1
+    → Turn OFF Pump immediately
